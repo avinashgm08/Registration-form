@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Registration form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h1>Registration form</h1>
+            <p>This form will collect the basic information for future use</p>
+            <form method="post" action="www.google.com">
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input type="last-name" name="last-name" type="text" required/></label>
+            <label for="email">Enter Your Email id:<input id="email" name="email" type="text" required</label>
+            <label for=""new-passwprd">Enter Your new password:<input id="new-password" name="new-password type="text" required/></label>
+        </fieldset>
+        <feildset>
+            <legend>Account type(required)</legend>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked required/>personal-account</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type"  class="inline">business-account</label>
+        </feildset>
+        <fieldset>
+            <label for="profile-picture">Upload profile picture:<input id="profile-picture" name="profile-picture" type="file"></picture></label>
+            <label for="age">Enter Your age:<input id="age" name="age" type="number"></label>
+            <label for="refferer">How did you hear about us:
+            <select id="refferer" name="refferer>
+            <option value="">(select one)</option>
+            <option value="1">freecodecamp news</option>
+            <option value="2">youtube</option>
+            <option value="3">Friend suggestion</option>
+            <option value="4">Social media platform</option>
+            </select>
+            <label for="bio">Provide a bio:<textarea id="bio" name="bio" type="text" rows="5" cols="20" placeholder="I like coding beach..."></textarea></label>
+        </fieldset>
+        <label for="terms-conditions"><input  class="inline" id="terms-conditions" name="terms-conditions" type="checkbox" required name="terms-conditions">I accept the <a href="https://www.google.com">terms-conditions</a></label>
+        <label>
+            <input type="button" value="submit">
+        </label>
+    </form>
+    </body>
+</html>
